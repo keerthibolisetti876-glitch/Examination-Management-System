@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    background: #182848;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.login-btn {
+    background: #ffd166;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background: #ffd166;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 60px 8%;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #182848;
+}
+
+
+/* Dashboard Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 35px;
+    color: #4b6cb7;
+    margin-bottom: 10px;
+}
+
+
+/* Tables */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #182848;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.scheduled {
+    background: #d9f7df;
+    color: green;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+.pending {
+    background: #fff0c2;
+    color: #9a6b00;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+
+/* Subjects */
+
+.subject-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.subject {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.subject h3 {
+    color: #4b6cb7;
+    margin-bottom: 12px;
+}
+
+.subject p {
+    margin: 8px 0;
+}
+
+
+/* Hall Ticket */
+
+.hall-ticket {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border: 2px solid #182848;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.hall-ticket h2 {
+    text-align: center;
+    color: #182848;
+    margin-bottom: 20px;
+}
+
+.hall-ticket p {
+    margin: 12px 0;
+}
+
+.hall-ticket button,
+.exam-box button,
+.modal-content button {
+    background: #182848;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+/* Online Exam */
+
+.exam-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.timer {
+    text-align: right;
+    color: #d62828;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.exam-box h3 {
+    margin-bottom: 15px;
+}
+
+.exam-box label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f1f3f8;
+    border-radius: 5px;
+}
+
+
+/* Result */
+
+.result-box {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Reports */
+
+.report-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.report {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.report h3 {
+    color: #4b6cb7;
+    margin-bottom: 10px;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background: #182848;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subject-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .report-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
